@@ -1,12 +1,15 @@
 import React from "react";
+import HighlightIcon from "@material-ui/icons/Highlight";
 
-function Note(props) {
+function Header() {
   return (
-    <div className="note">
-      <h1>{props.title}</h1>
-      <p>{props.content}</p>
-    </div>
+    <header>
+      <h1>
+        <HighlightIcon />
+        Keeper
+      </h1>
+    </header>
   );
 }
 
-export default Note;
+export default Header;
